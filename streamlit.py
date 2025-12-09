@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import numpy as np # For creating dummy data
 
 st.title("FEMA Disaster Relief Dashboard")
 
@@ -26,6 +25,7 @@ st.plotly_chart(fig_box)
 
 #--- Optional text summary--
 st.markdown("*Insight:* Compare the central tendency and spread of repair amounts for TSA-eligible vs. non-eligible households.*")
+
 
 
 
