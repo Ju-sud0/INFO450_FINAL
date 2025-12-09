@@ -1,14 +1,11 @@
-# Install Streamlit
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
-
 st.title("FEMA␣Disaster␣Relief␣Dashboard")
-#--- Load FEMA dataset--
+
 # Option 2: Or use a raw GitHub or LinkedIn file link
-df = pd.read_csv("https://raw.githubusercontent.com/<user>/<repo>/main/IndividualAssistanceHousingRegistrantsLargeDisasters.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/username/repo/main/
+IndividualAssistanceHousingRegistrantsLargeDisasters.csv")
 st.subheader("Data␣Preview")
 st.write(df.head())
 #--- Histogram of Repair Amount--
@@ -24,8 +21,6 @@ labels={"tsaEligible": "TSA␣Eligible␣(1=Yes,␣0=No)",
 "repairAmount": "Repair␣Amount"})
 st.plotly_chart(fig_box)
 #--- Optional text summary--
-st.markdown("""*Insight:*␣Compare␣the␣central␣tendency␣and␣spread␣of␣repair␣amounts␣
-
-for␣TSA-eligible␣vs.␣non-eligible␣households.*""")
+st.markdown("*Insight:*␣Compare␣the␣central␣tendency␣a
 
 
