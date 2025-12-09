@@ -4,8 +4,7 @@ import plotly.express as px
 st.title("FEMA␣Disaster␣Relief␣Dashboard")
 
 # Option 2: Or use a raw GitHub or LinkedIn file link
-df = pd.read_csv("https://raw.githubusercontent.com/username/repo/main/
-IndividualAssistanceHousingRegistrantsLargeDisasters.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/username/repo/main/IndividualAssistanceHousingRegistrantsLargeDisasters.csv")
 st.subheader("Data␣Preview")
 st.write(df.head())
 #--- Histogram of Repair Amount--
@@ -22,5 +21,6 @@ labels={"tsaEligible": "TSA␣Eligible␣(1=Yes,␣0=No)",
 st.plotly_chart(fig_box)
 #--- Optional text summary--
 st.markdown("*Insight:*␣Compare␣the␣central␣tendency␣a
+
 
 
