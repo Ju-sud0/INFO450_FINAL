@@ -1,5 +1,4 @@
 # Install Streamlit
-!pip install streamlit
 
 import streamlit as st
 import pandas as pd
@@ -25,4 +24,5 @@ labels={"tsaEligible": "TSA␣Eligible␣(1=Yes,␣0=No)",
 st.plotly_chart(fig_box)
 #--- Optional text summary--
 st.markdown("""*Insight:*␣Compare␣the␣central␣tendency␣and␣spread␣of␣repair␣amounts␣
+
 for␣TSA-eligible␣vs.␣non-eligible␣households.*""")
