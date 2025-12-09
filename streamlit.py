@@ -19,11 +19,7 @@ title="Repair␣Amount␣by␣TSA␣Eligibility",
 labels={"tsaEligible": "TSA␣Eligible␣(1=Yes,␣0=No)",
 "repairAmount": "Repair␣Amount"})
 st.plotly_chart(fig_box)
-#--- Optional text summary--
-st.markdown("""
-*Insight:* Compare the central tendency and spread of repair 
-amounts for TSA-eligible vs. non-eligible households.
-""")
+
 
 
 
